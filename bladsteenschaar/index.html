@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blad steen schaar</title>
+</head>
+
+<body>
+
+    <h1>BLAD - STEEN - SCHAAR</h1>
+    <!-- <form>
+        <label for="spel">Kies blad, steen of schaar: </label>
+        <select name="spel" id="spel">
+            <option value="blad">
+               blad
+            </option>
+            <option value="steen">
+            steen
+            </option>
+            <option value="schaar">
+                schaar
+                </option>
+        </select>
+    </form> -->
+    <div class="keuze" >
+             <img src="https://i.pinimg.com/564x/e9/7a/c8/e97ac845390ea0edbee679dd68344441.jpg" 
+                alt="blad" onclick="keuzeU(this)">    
+                <img src="https://www.urnwinkel.nl/media/catalog/product/cache/752bc741c08ae7bd3b39c6561da3b139/h/a/handgemaakte_crematie_as_urn_hand_made_cremation_funeral_ash_handgefertigt_urne_funeraire_fait_a_la_main_hecho_a_mano_urna_funeraria_handgjorda_301091.jpg"
+                    alt="steen" onclick="keuzeU(this)">
+                    <img src="https://www.buromas.be/autoimg/321455/1024x768/ffffff/20015.jpg"
+                    alt="schaar" onclick="keuzeU(this)">
+    </div>
+<div class="keuzes">
+       <h3 id="eigenKeuze">Jouw keuze:</h3>
+    <h3 id="pckeuze">Keuze computer: </h3>  
+     <h3 id="aantal">Aantal spelletjes</h3>
+</div>
+
+       <h3 id="winnaar">Winnaar:</h3> 
+    
+
+ 
+    
+    <div class="resultaat">
+            <h3 id="winU">Jouw score</h3>
+    <h3 id="winC">Computer score</h3>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color:blue;
+ background-image: url(https://img.wallpapersafari.com/desktop/1024/576/23/7/azcivb.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.keuze{
+
+    border: 5px dashed green;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.keuze img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px;
+padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.keuze img:hover{
+    box-shadow: 0 0 20px black;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.keuzes{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.keuzes>h3{
+    margin: 30px;
+}
+#winnaar{
+    border: 10px solid green;
+    border-radius: 30px;
+    padding: 20px 50px;
+    width: 200px;
+    font-size: 30px;
+    color: red;
+    margin: auto;
+}
+.resultaat{
+    font-size: 30px;
+}

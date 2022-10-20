@@ -14,7 +14,7 @@ let throws = 3
 btn.addEventListener('click',
   shakeDices)
 // let showtest = document.querySelector('.test')
-highscore.innerHTML = "highscore: "+ localStorage.getItem("score")
+highscore.innerHTML = "hoogste score: "+ localStorage.getItem("score")
 let c;
 let one, two, three, four, five, six;
 let drie;
@@ -213,7 +213,7 @@ function eindeGame(difference) {
   btn.style.display = "none"
  
   if(score > localStorage.getItem("score")){
-      highscore.innerHTML = `highscore: ${score}`
+      highscore.innerHTML = `hoogste score: ${score}`
        localStorage.setItem("score", `${score}`)
   }
 

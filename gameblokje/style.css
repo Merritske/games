@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 1500px;
+    position: absolute;
+  /*  background-image: url("background.jpg") ;*/
+}
+.modal{
+    display: none;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    z-index: 5;
+    border-radius: 20px;
+}
+.modalhead >h3{
+    color:green ;
+    padding-left: 30px;
+}
+.modalbody{
+    padding-left: 200px;
+    padding-top: 30px;
+}
+.modalbody>button{
+    width: 80px;
+    height: 30px;
+    background-color: green;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.modalbody>button:hover{
+    background-color: rgb(20,230,60);
+    color: green;
+    box-shadow: 0 0 5px 3px grey;
+}
+.container{
+
+    width: 900px;
+    height: 450px;
+    margin:50px;
+    position: relative;
+    border: 30px solid rgb(59, 59, 59);
+     background-image: linear-gradient(14deg, green 30%, white 40% , green 30% ); 
+    /* background-image: url("weg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom ;
+   background-position: right; */
+ 
+}
+.tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    right:0px;
+    width: 300px;
+
+}
+.tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px solid grey;
+    border-color: grey transparent transparent transparent;
+}
+.container:hover .tooltiptext{
+    visibility: visible;
+}
+.score{
+    font-size: 40px;
+    color: red;
+    position: relative;
+   left: 400px;
+   top: 100px;
+}
+.poort{
+    display: flex;
+    position: absolute;
+    top: 5px;
+left: 200px;
+}
+.left{
+    width: 100px;
+    height: 200px;
+    transform: skew(0deg, -20deg);
+    position: relative;
+    top: 89px;
+    background-color: grey;
+    border: 5px double rgb(60, 60, 60);
+    z-index: 4;
+}
+.right{
+    width: 100px;
+    height: 200px;
+    transform: skew(0deg, -20deg);
+    position: relative;
+    top: 50px;
+    background-color: grey;
+    border: 5px double rgb(60, 60, 60);
+    z-index: 1;
+}
+.bal{
+      border-radius: 50%;
+   /* background-color: aqua; */
+    height: 45px;
+    width: 55px; 
+    font-size: 30px;
+    position: relative;
+    top: 350px;
+    left: 800px;
+ /*   animation: balletje 2s infinite linear;*/
+ animation-name: balletje ;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+    animation-play-state : running;
+    z-index: 2;
+}
+@keyframes balletje{
+    0% {transform: translate(-20,-20);}
+    100% {transform: translate(-800px, -200px);    }
+}
+h3{
+    padding:5px;
+    padding-top: 50px;
+    color: rgb(230, 60, 60);
+}

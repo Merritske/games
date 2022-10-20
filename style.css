@@ -1,0 +1,36 @@
+*, body{
+    text-align: center;
+    margin: 20px;
+}
+.games{
+    border: 5px solid blue;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+height: 25px;
+}
+h2{
+    color: rgb(3, 3, 89);
+}
+a:hover{
+    color: blue;
+font-size: larger;
+z-index: 2;
+}
+footer a{
+    width: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a, footer{
+    background-color: antiquewhite;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
